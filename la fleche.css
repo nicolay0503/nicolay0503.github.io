@@ -1,0 +1,38 @@
+/* Style pour la flèche de retour */
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-arrow:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-arrow::before {
+    content: "←";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Pour les appareils mobiles */
+@media (max-width: 768px) {
+    .back-arrow {
+        top: 10px;
+        left: 10px;
+    }
+}
